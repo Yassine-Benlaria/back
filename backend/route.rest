@@ -1,0 +1,29 @@
+Get http://localhost:5000/articles
+###
+POST http://localhost:5000/articles/add
+Content-Type: application/json
+
+{
+    "titre": "article 5",
+    "designation" : "something",
+    "sous_chapitre"  : "612774c37987c923e40315a9"
+}
+###
+
+GET http://localhost:5000/articles/60b9e5148b465415e8d368dd
+Content-Type: application/json
+
+{
+    "designation"  : "123456789",
+    "titre" : "ttttt"
+}
+###
+POST http://localhost:5000/sous_chapitres/add
+Content-Type: application/json
+
+{
+    "titre": "sous chapitre 2",
+    "description" : "nested documents testing",
+    "chapitre" : "612762657987c923e40315a5"
+
+} 
